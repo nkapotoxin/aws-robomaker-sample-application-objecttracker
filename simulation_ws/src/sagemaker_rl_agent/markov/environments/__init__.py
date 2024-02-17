@@ -15,3 +15,10 @@ register(
     max_episode_steps = MAX_STEPS,
     reward_threshold = 200
 )
+
+register(
+    id='Robot-ObjectTracker-v0',
+    entry_point='markov.environments.new_object_tracker_env:TurtleBot3ObjectTrackerAndFollowerDiscreteEnv',
+    max_episode_steps = MAX_STEPS,
+    reward_threshold = 200
+)
